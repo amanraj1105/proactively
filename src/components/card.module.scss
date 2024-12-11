@@ -1,0 +1,75 @@
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .imageWrapper {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .iconBadge {
+      position: absolute;
+      top: 80%;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+      .icon {
+        font-size: 14px;
+        color: #007bff;
+      }
+
+      .iconText {
+        font-size: 12px;
+        color: #919191;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .content {
+    padding: 20px;
+
+    h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
